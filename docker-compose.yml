@@ -4,6 +4,8 @@ services:
     restart: always
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5434:5432
     volumes:
       - ./tmp/postgres_data:/var/lib/postgresql/data
   web:
