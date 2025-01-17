@@ -19,6 +19,7 @@ Rails.application.configure do
 
   config.force_ssl = false
 
+  config.hosts.clear
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
